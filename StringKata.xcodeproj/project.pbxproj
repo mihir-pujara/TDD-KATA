@@ -14,6 +14,8 @@
 		145FFA4F22EEBB0700358BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145FFA4D22EEBB0700358BDC /* LaunchScreen.storyboard */; };
 		145FFA5222EEBB0700358BDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFA5122EEBB0700358BDC /* main.m */; };
 		145FFA5C22EEBB0700358BDC /* StringKataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFA5B22EEBB0700358BDC /* StringKataTests.m */; };
+		145FFA6822EEC16700358BDC /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFA6722EEC16700358BDC /* Calculator.m */; };
+		145FFA6A22EEC1F600358BDC /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFA6922EEC1F600358BDC /* CalculatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		145FFA5722EEBB0700358BDC /* StringKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145FFA5B22EEBB0700358BDC /* StringKataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringKataTests.m; sourceTree = "<group>"; };
 		145FFA5D22EEBB0700358BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145FFA6622EEC16700358BDC /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		145FFA6722EEC16700358BDC /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		145FFA6922EEC1F600358BDC /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,8 @@
 				145FFA4D22EEBB0700358BDC /* LaunchScreen.storyboard */,
 				145FFA5022EEBB0700358BDC /* Info.plist */,
 				145FFA5122EEBB0700358BDC /* main.m */,
+				145FFA6622EEC16700358BDC /* Calculator.h */,
+				145FFA6722EEC16700358BDC /* Calculator.m */,
 			);
 			path = StringKata;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 			children = (
 				145FFA5B22EEBB0700358BDC /* StringKataTests.m */,
 				145FFA5D22EEBB0700358BDC /* Info.plist */,
+				145FFA6922EEC1F600358BDC /* CalculatorTests.m */,
 			);
 			path = StringKataTests;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				145FFA4722EEBB0500358BDC /* ViewController.m in Sources */,
+				145FFA6822EEC16700358BDC /* Calculator.m in Sources */,
 				145FFA5222EEBB0700358BDC /* main.m in Sources */,
 				145FFA4422EEBB0500358BDC /* AppDelegate.m in Sources */,
 			);
@@ -214,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				145FFA5C22EEBB0700358BDC /* StringKataTests.m in Sources */,
+				145FFA6A22EEC1F600358BDC /* CalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PEWP3G4Y97;
 				INFOPLIST_FILE = StringKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecw.StringKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ecwInHouse;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -379,7 +392,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PEWP3G4Y97;
 				INFOPLIST_FILE = StringKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +402,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecw.StringKata;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ecwInHouse;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

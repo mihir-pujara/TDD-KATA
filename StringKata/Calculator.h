@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Calculator : NSObject
 
+- (NSInteger)add:(NSString *)numberString;
+- (NSInteger)add:(NSString *)numberString delimiter:(NSString *)delimiter;
+
 @end
 
 NS_ASSUME_NONNULL_END
