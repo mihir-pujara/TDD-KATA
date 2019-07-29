@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger)add:(NSString *)numberString;
 - (NSInteger)add:(NSString *)numberString delimiter:(NSString *)delimiter;
+- (NSInteger)add:(NSString *)numberString delimiters:(NSOrderedSet *)delimiters;
 
 @end
 

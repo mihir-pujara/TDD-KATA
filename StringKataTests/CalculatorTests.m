@@ -48,7 +48,7 @@
 }
 
 - (void)test1Plus2WithSemicolonAsDelimiter {
-    NSInteger result = [calc add:@"//;\n1;2" delimiter:@";"];
+    NSInteger result = [calc add:@";\n1;2" delimiter:@";"];
     XCTAssertEqual(result, 3);
 }
 
@@ -59,7 +59,13 @@
 
 - (void)testAddWithMultipleLengthDelimiter {
     //[***]\n1***2***3
-    NSInteger result = [calc add:@"//[***]\n1***2***3" delimiter:@"***"];
+    NSInteger result = [calc add:@"[***]\n1***2***3" delimiter:@"***"];
+    XCTAssertEqual(result, 6);
+}
+
+- (void)testAddWithMultipleDelimiters {
+    //[***]\n1***2***3
+    NSInteger result = [calc add:@"*%\n1*2%3" delimiters:[[NSOrderedSet alloc] initWithObjects:@"*", @"%", nil]];
     XCTAssertEqual(result, 6);
 }
 
